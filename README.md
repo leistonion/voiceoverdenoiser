@@ -61,6 +61,20 @@ cmake --build build --config Release --target VoiceOverDenoiser_VST3
 
 Generated VST3 is copied after build via JUCE plugin settings.
 
+## Create a downloadable ZIP
+
+From repo root:
+
+```bash
+./scripts/package_zip.sh
+```
+
+Archive output:
+
+```text
+dist/voiceoverdenoiser_project.zip
+```
+
 ## ONNX / GPU integration notes
 
 This scaffold keeps inference interfaces isolated in `OnnxModelRunner` so you can:
